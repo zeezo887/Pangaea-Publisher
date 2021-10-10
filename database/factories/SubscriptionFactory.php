@@ -22,7 +22,8 @@ class SubscriptionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'url' => $this->faker->url,
+            'topic' => $this->faker->name
         ];
     }
 }
